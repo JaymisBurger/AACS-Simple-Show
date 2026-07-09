@@ -1,0 +1,106 @@
+.show-form {
+  display: grid;
+  gap: 22px;
+}
+
+.form-section {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+}
+
+.form-section h2,
+.section-heading p {
+  margin: 0;
+}
+
+.section-heading {
+  display: grid;
+  gap: 4px;
+}
+
+.section-heading p {
+  color: var(--color-muted);
+}
+
+.form-grid,
+.tier-window-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tier-window-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.form-field {
+  display: grid;
+  font-weight: 800;
+  gap: 8px;
+}
+
+.form-field.wide {
+  grid-column: 1 / -1;
+}
+
+.form-field input,
+.form-field select {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font: inherit;
+  min-height: 44px;
+  min-width: 0;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.datetime-field {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(150px, 1fr) minmax(110px, 0.7fr);
+}
+
+.checkbox-field {
+  align-items: center;
+  display: flex;
+  font-weight: 800;
+  gap: 10px;
+}
+
+.field-error {
+  color: var(--color-danger);
+  display: grid;
+  font-size: 0.86rem;
+  font-weight: 700;
+  gap: 4px;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 980px) {
+  .form-grid,
+  .tier-window-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .datetime-field {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .tier-window-grid .datetime-field {
+    grid-template-columns: 1fr;
+  }
+}

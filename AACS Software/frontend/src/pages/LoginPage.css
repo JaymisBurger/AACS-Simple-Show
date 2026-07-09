@@ -1,0 +1,68 @@
+.login-page {
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(22, 36, 55, 0.78), rgba(23, 58, 50, 0.82)),
+    url('https://images.unsplash.com/photo-1551818255-e6e10975bc17?auto=format&fit=crop&w=1600&q=80');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.login-panel {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(5, 12, 20, 0.24);
+  display: grid;
+  gap: 28px;
+  max-width: 440px;
+  padding: 36px;
+  width: 100%;
+}
+
+.login-panel h1 {
+  font-size: 2rem;
+  margin: 4px 0 8px;
+}
+
+.login-copy {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.login-form {
+  display: grid;
+  gap: 18px;
+}
+
+.login-form label {
+  color: var(--color-ink);
+  display: grid;
+  font-weight: 700;
+  gap: 8px;
+}
+
+.login-form input {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font: inherit;
+  padding: 12px;
+}
+
+.login-form input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(23, 122, 96, 0.16);
+  outline: none;
+}
+
+@media (max-width: 640px) {
+  .login-page {
+    padding: 18px;
+  }
+
+  .login-panel {
+    padding: 26px;
+  }
+}

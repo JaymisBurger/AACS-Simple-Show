@@ -1,0 +1,30 @@
+{
+  "name": "aacs-vendor-booths-backend",
+  "version": "0.1.0",
+  "description": "Express API for vendor booth selection management.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed:admin": "node src/scripts/seedAdmin.js",
+    "check-setup": "node src/scripts/checkSetup.js",
+    "seed:demo": "node src/scripts/seedDemoData.js",
+    "cleanup:demo": "node src/scripts/cleanupDemoData.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "image-size": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
